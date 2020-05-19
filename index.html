@@ -50,16 +50,16 @@
         * Bloque HEADER
         *
       -->
-           <figure id="logo">
+          <figure id="logo">
             <!--
              *
              * Bloque LOGO
              *
             -->
                 <img src="" alt="">
-           </figure>
+          </figure>
       
-           <nav id="navegacionPrincipal">
+          <nav id="navegacionPrincipal">
             <!--
              *
              * Bloque Links de Navegación Principal
@@ -70,36 +70,49 @@
     </header>
 
     <main>
-      <!--
-        *
-        * Bloque MAIN
-        *
-      -->
-      
+      <!--Bloque MAIN -->
+
+
+        
+        <!-- Solicitando Nombre al Usuario -->
+        <script type="text/javascript"> 
+          var nombre_y_marcas = [];  // Array de nombre y marca, para imprimer en navegador
+          var nombre = prompt('Estimado Usuario \n- Por favor ingese su nombre: ');
+          nombre_y_marcas.push(nombre);
+          document.write(` Nombre de Usuario : ${nombre}<br>`);
+          document.write(`<br>`);       // <br>  salto de linea 
+          
+        var i = 1;              // variable auxiliar de while
+        while (i<=3)
+          {
+            // marcas_usuario variable  string introducido por usuario
+            var marcas_usuario = prompt('Por favor ingese la primera marca: ');
+            nombre_y_marcas.push(marcas_usuario);
+            document.write(` marca  ${i} : ${nombre_y_marcas[i]} <br>`);   // Impresion de array en navegador
+            document.write(`<br>`);                
+            i++;
+          }
+        </script>     
+
+
+
+        <!--Bloque SECTION-->
           <section>
-            <!--
-             *
-             * Bloque SECTION
-             *
-            -->
+          
+            <div class="usuario">
+              <img src="imagenes/Pedro.png" alt="">
+          </div>
+
           </section>
-      
+          
           <article>
-            <!--
-             *
-             * Bloque ARTICLE
-             *
-            -->
+            <!--Bloque ARTICLE-->
           </article>
       
     </main>
 
     <footer>
-      <!--
-        *
-        * Bloque FOOTER
-        *
-        -->
+      <!--Bloque FOOTER-->
     </footer>
   </body>
 </html>
